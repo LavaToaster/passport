@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Passport\\": "src/"
+            "LaravelDoctrine\\Passport\\": "src/"
         }
     },
     "require": {
