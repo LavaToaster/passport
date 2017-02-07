@@ -115,7 +115,7 @@ class PassportServiceProvider extends ServiceProvider
                 $rtel = new ResolveTargetEntityListener();
 
                 // TODO: Make this configurable
-                $rtel->addResolveTargetEntity(OAuthUser::class, 'App\Entities\User', []);
+                $rtel->addResolveTargetEntity(OAuthUser::class, $userEntity, []);
 
                 $manager->getEventManager()->addEventListener(Events::loadClassMetadata, $rtel);
 
