@@ -103,7 +103,7 @@ class PassportServiceProvider extends ServiceProvider
 
     protected function registerEntities()
     {
-        $this->app->afterResolving('registry', function (IlluminateRegistry $registry, Container $container) {
+        $this->app->resolving('registry', function (IlluminateRegistry $registry, Container $container) {
             $userEntity = $container['config']->get('auth.providers.users.model');
 
             Passport::$userEntity = $userEntity;
