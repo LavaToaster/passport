@@ -2,6 +2,7 @@
     "name": "laravel-doctrine/passport",
     "description": "Laravel Passport reimplemented for laravel-doctrine",
     "type": "library",
+    "abandoned": true,
     "authors": [
         {
             "name": "Taylor Otwell",
